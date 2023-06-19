@@ -49,6 +49,7 @@ export default {
       this.heji = 0
       this.price = 0
       this.$bus.car = new Array()
+      this.$bus.discount = 1
     }
   },
   mounted() {

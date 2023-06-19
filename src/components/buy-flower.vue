@@ -10,10 +10,31 @@
       <div id="top">
         <div class="flower-div">
           <div id="flower1"></div>
-          <span>鲜花1</span>
+          <span>郁金香</span>
+        </div>
+        <div class="flower-div">
+          <div id="flower2"></div>
+          <span>康乃馨</span>
+        </div>
+        <div class="flower-div">
+          <div id="flower3"></div>
+          <span>玫瑰</span>
         </div>
       </div>
-      <div id="bottom"></div>
+      <div id="bottom">
+        <div class="flower-div">
+          <div id="flower4"></div>
+          <span>风信子</span>
+        </div>
+        <div class="flower-div">
+          <div id="flower5"></div>
+          <span>百合</span>
+        </div>
+        <div class="flower-div">
+          <div id="flower6"></div>
+          <span>满天星</span>
+        </div>
+      </div>
     </div>
     <el-dialog title="提示" :visible.sync="dialogVisible" width="30%" :before-close="handleClose">
       <span>是否确认放入购物车</span>
@@ -75,7 +96,7 @@ export default {
 #display {
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 90%;
 }
 #top {
   flex: 1;
@@ -84,6 +105,8 @@ export default {
 }
 #bottom {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
 #top .flower-div {
   width: 20%;
@@ -91,10 +114,46 @@ export default {
 #top div span {
   margin-left: 35%;
 }
+#bottom .flower-div {
+  width: 20%;
+}
+#bottom div span {
+  margin-left: 35%;
+}
 #flower1 {
   width: 100%;
   height: 80%;
   background-image: url('@/assets/flower1.jpg');
+  background-size: 100% 100%;
+}
+#flower2 {
+  width: 100%;
+  height: 80%;
+  background-image: url('@/assets/flower2.jpg');
+  background-size: 100% 100%;
+}
+#flower3 {
+  width: 100%;
+  height: 80%;
+  background-image: url('@/assets/flower3.jpg');
+  background-size: 100% 100%;
+}
+#flower4 {
+  width: 100%;
+  height: 80%;
+  background-image: url('@/assets/flower4.jpg');
+  background-size: 100% 100%;
+}
+#flower5 {
+  width: 100%;
+  height: 80%;
+  background-image: url('@/assets/flower5.jpg');
+  background-size: 100% 100%;
+}
+#flower6 {
+  width: 100%;
+  height: 80%;
+  background-image: url('@/assets/flower6.jpg');
   background-size: 100% 100%;
 }
 </style>
